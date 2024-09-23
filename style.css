@@ -1,0 +1,152 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items */
+}
+
+.title {
+    color: white; /* White color for title */
+}
+
+.message {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #f9f9f9;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%; /* Full width with some margin */
+    max-width: 300px; /* Limit width on larger screens */
+}
+
+.ok-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white; /* White background for OK button */
+    color: black;
+    cursor: pointer;
+    width: 90%; /* Full width */
+    max-width: 300px; /* Limit width on larger screens */
+}
+
+.joke-button {
+    padding: 15px 25px; /* Increased padding for more height */
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6347; /* Background color for joke button */
+    color: white; /* White text for joke button */
+    cursor: pointer;
+    width: 95%; /* Slightly wider */
+    max-width: 300px; /* Limit width on larger screens */
+    margin: 20px auto; /* Center the button horizontally */
+    display: block; /* Make it a block element for centering */
+    font-size: 1em; /* Optional: Adjust font size for better readability */
+    text-align: center; /* Center text inside the button */
+}
+
+.joke-button:hover {
+    background-color: #ff4500; /* Darker color for joke button on hover */
+}
+
+.birthday-video {
+    width: 100%; /* Set width to 100% to fit the container */
+    height: 150px; /* Set a smaller height */
+    max-width: 400px; /* Optional: Limit max width if desired */
+    border-radius: 0px;
+    margin: 10px 0 20px; /* Set top margin to 10px, bottom margin to 20px */
+}
+
+.cake-container {
+    margin: 20px 0;
+}
+
+.cake {
+    position: relative;
+    width: 120px; /* Set a consistent width for centering */
+    margin: 0 auto;
+}
+
+.layer {
+    width: 100%;
+    position: relative;
+}
+
+.layer-small {
+    height: 30px;
+    width: 80px; /* Width for small layer */
+    background-color: white; /* White for small layer */
+    margin: 0 auto; /* Center the layer */
+}
+
+.layer-medium {
+    height: 40px;
+    width: 100px; /* Width for medium layer */
+    background-color: lightblue; /* Light blue for medium layer */
+    margin: 0 auto; /* Center the layer */
+}
+
+.layer-large {
+    height: 50px;
+    width: 120px; /* Width for large layer */
+    background-color: blue; /* Blue for large layer */
+    margin: 0 auto; /* Center the layer */
+}
+
+.candles {
+    display: flex;
+    justify-content: center; /* Center the candles */
+    position: absolute;
+    top: -30px; /* Position above the cake */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.candle {
+    width: 10px;
+    height: 30px;
+    background-color: #ff6347; /* Red for the candle */
+    margin: 0 5px; /* Space between candles */
+    position: relative;
+}
+
+.flame {
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px; /* Position above the candle */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: flicker 0.1s infinite alternate; /* Faster flicker */
+}
+
+@keyframes flicker {
+    0% { opacity: 1; transform: translateX(-50%) scale(1); }
+    50% { opacity: 0.7; transform: translateX(-50%) scale(1.2); } /* Slightly bigger */
+    100% { opacity: 1; transform: translateX(-50%) scale(1); }
+}
+
+.joke {
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif; /* Correct font style */
+    color: white;
+}

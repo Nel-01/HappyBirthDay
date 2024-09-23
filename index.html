@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Happy Birthday!</h1>
+        <p class="message">Hope your day is filled with cake and laughter!</p>
+        
+        <input type="text" id="name-input" placeholder="Enter your name" />
+        <button id="ok-button">OK</button><br><br><br>
+        
+        <div id="cake-container" class="cake-container" style="display: none;">
+            <div class="cake">
+                <div class="layer layer-small"></div>
+                <div class="layer layer-medium"></div>
+                <div class="layer layer-large"></div>
+                <div class="candles">
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+            </div>
+            <p id="user-message"></p>
+        </div>
+      
+        <video id="birthday-video" class="birthday-video" controls style="display: none;" autoplay muted loop>
+            <source src="happybday.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+               
+        
+        <button id="joke-button" style="display: none;">Click me if you want a joke</button>
+        <p id="joke" class="joke"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
